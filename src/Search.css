@@ -1,0 +1,44 @@
+.searchinput{
+    align-items: center;
+    display: flex;
+    border: 1px solid lightgray;
+    height: 30px;
+    border-radius: 999px;
+    padding: 10px 20px;
+    width: 40vw;
+    margin: 0;
+    margin-top: 20px ;
+}
+
+.searchinput > input{
+    padding: 10px 20px;
+    flex: 1;
+    border: none;
+    font-size: medium;
+
+}
+
+.searchinput  input :focus{
+    outline-width: 0;
+    outline-style: none;
+}
+
+.searchbuttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.searchbuttons > button{
+    padding: 7px 15px;
+    margin: 5px;
+    border-color: #f8f8f8;
+    border: 1px solid gray;
+    color: gray;
+    text-transform: inherit;
+    color: gray;
+}
+.hidebuttons{
+    display: none;
+}

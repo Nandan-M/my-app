@@ -1,0 +1,48 @@
+.home{
+    display: flex;
+    flex-direction : column;
+    height : 100vh;
+}
+
+.home__header{
+    display: flex ;
+    justify-content: space-around;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.home__header a:hover{
+text-decoration: underline;
+}
+
+.home__header a{
+    font: 1em sans-serif;
+    margin-right: 20px;
+    text-decoration: inherit;
+    color:rgba(0, 0,0, 0.87);
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+/* we can write code for tags alos in the way .className > img
+example
+
+.header >img{}
+*/
+
+.search_area{
+    display: flex;
+    align-items: center;
+}
+
