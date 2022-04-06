@@ -1,0 +1,54 @@
+.Searchheader{
+display: flex;
+position: sticky;
+top: 0;
+background-color: white;
+z-index: 100;
+align-items: flex-start;
+padding: 30;
+border-bottom: 1px solid lightgray;
+}
+
+.Headersearchbody > .searchinput > .input{
+margin-top: 0;
+width: unset;
+margin: unset;
+max-width: unset;
+width: unset;
+
+}
+
+.searchPageResult{
+    margin: 40px;
+}
+
+.Count{
+    font-size: 14px;
+    color: gray;
+}
+
+.searchPageResults{
+    max-width: 1500px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.resultTitle{
+    text-decoration: none;
+    color: lightslategrey;
+}
+
+.resultTitle :hover{
+    text-decoration: underline;
+}
+
+.resultTitle > h2{
+    font-weight: 500;
+}
+
+.resultSnippet{
+    margin: 10px;
+    font-style: italic;
+    text-decoration: none;
+}

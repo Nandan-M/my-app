@@ -4,13 +4,23 @@ import { Mic } from "@mui/icons-material";
 import { Button,ButtonBase } from "@mui/material";
 import './Search.css'
 import { useHistory } from "react-router-dom"
+import {useStateValue} from './StateProvider'
+import { actionTypes } from "./reducer";
 
 function Search({hideButtons = false}) {
-    const[Input , setInput] = useState(" ");
+    
+    const[{ } , dispatch] = useStateValue();
+
+    const[input , setInput] = useState(" ");
     const history = useHistory();
 
     const search = (e) =>{
         e.preventDefault();
+
+        dispatch({
+            type: actionTypes.setSearchTerm,
+            term : input
+        })
 
         //we need to push the history in the function search here
         history.push('/search');
@@ -23,7 +33,7 @@ function Search({hideButtons = false}) {
         <div className="search">
             <div className="searchinput">
                 <SearchRounded className="searchicon" />
-                <input value={Input} onChange = {e=> setInput(e.target.value)}/>
+                <input value={input} onChange = {e=> setInput(e.target.value)}/>
                 <Mic />
             </div>
               {!hideButtons ? (
